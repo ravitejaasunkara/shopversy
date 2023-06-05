@@ -1,0 +1,69 @@
+.main{
+    font-family: 'Source Code Pro', monospace;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: flex-start;
+}
+.login-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.form-holder{
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input,.form-control{
+    width: 100%;
+    border: 1px solid #252525;
+}
+
+.ng-valid.ng-touched{
+    border: 1px solid green;
+}
+.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+a{
+    text-decoration: none;
+}
+label{
+    font-weight: bolder;
+}
+@media all and (max-width: 980px) {
+    .container{
+        width: 80%;
+        height: 100vh;
+    }
+    
+}
+@media only screen and (max-width: 844px){
+	/*Big smartphones [426px -> 600px]*/
+    .container{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .container{
+        margin-top: 45px;
+        width: 100%;
+        height: 80vh;
+    }
+}

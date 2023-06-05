@@ -1,0 +1,68 @@
+<div class="homepage">
+    <div class="main-title">
+        <div class="carousel">
+            <ngb-carousel [showNavigationArrows]="true" [keyboard]="true" [pauseOnHover]="true" [interval]="3000">
+                <ng-template ngbSlide class="carousel-container">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[0]" alt="Random first slide" class="carousel-image" />
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[1]" alt="Random second slide" class="carousel-image" />
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[2]" alt="Random third slide" class="carousel-image" />
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+            <h1 class="browse-products-title font-weight-bold">Browse our latest products</h1>
+        </div>
+    </div>
+    <!-- sample-products-cards-->
+    <!-- <div class="container row d-flex justify-content-center align-items-center">
+        <div class="sample-products-card-1 col-lg-8 col-md-6 col-sm-12">
+            <a>
+                <div class="sample-products-image-holder">
+                    <img src="https://cdn.shopify.com/s/files/1/0765/2350/3915/files/1763582319057.jpg?v=1684178214&width=750" alt="" class="sample-products-card-image">
+                </div>
+                <hr>
+                <div class="navigator">
+                    <p>Electronics</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 sample-products-card-2">
+            Navigator
+        </div>
+    </div> -->
+    <div class="row container d-flex justify-content-center align-items-center item-list mb-5">
+        <div class="card col-lg-3 col-md-6 col-sm-12" *ngFor="let item of cardItemsInfo">
+            <a>
+                <div class="image-holder">
+                    <img [src]="item.imageUrl"
+                        alt="" class="card-image">
+                </div>
+                <hr>
+                <div class="details">
+                    <p class="description">{{item.description.slice(0,42)}}..</p>
+                    <b class="price">$60.60 USD</b>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

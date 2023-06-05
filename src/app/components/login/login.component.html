@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row col-12">
+        <form class="form-holder">
+            <h1 style="font-weight: 1000;">Login</h1>
+            
+            <div class="email mt-3">
+                <label for="email" class="form-label"><span class="text-danger">*</span> Email</label>
+                <input type="text" class="form-control form-control-lg" id="email" formControlName="email">
+                
+            </div>
+            <div class="password mt-3">
+                <label for="password" class="form-label"><span class="text-danger">*</span> Password</label>
+                <input type="password" class="form-control form-control-lg" id="pwd" formControlName="password">
+                
+            </div>
+            <!-- <div class="form-check  col-lg-3 col-sm-3 col-md-12 d-flex mt-2">
+                <input class="form-check-input" type="checkbox" id="showhide" style="width: 15px;">
+                <label class="form-check-label small" for="flexCheckDefault" style="margin-left: 8px;" ></label>
+            </div> -->
+
+            <div class="login-button mt-4 d-flex justify-content-center">
+                <button class="btn btn-dark btn-lg text-center">Login</button>
+            </div>
+            <div class="signup mt-2 mb-2 text-center">
+                <p class="mt-3"><a [routerLink]="['/signup']"><b class="create-account">Create account </b><i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></a></p>
+            </div>
+        </form>
+    </div>
+</div>

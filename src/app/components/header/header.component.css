@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.header-div {
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+
+.nav-header {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #eeedec;
+}
+
+.nav-header-boot {
+    background-color: #eeedec;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nav-header-2 {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #eeedec;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+a {
+    color: #252525;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.nav-header-2-childs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.shopversy-title {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.navigation-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.navigation-child-0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+}
+
+.nav-link {
+    margin-right: 16px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+.icon-sub {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+li {
+    text-decoration: none;
+}
+
+.navigation .navigation-child .active-menu {
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+}
+
+.icon-search {
+    background-image: url('https://img.icons8.com/ios-filled/50/search--v1.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 40px;
+    /* Adjust the padding to make room for the icon */
+    background-size: 25px 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*Small smartphones [325px -> 425px]*/
+    .shopversy-title {
+        margin-right: 0px;
+    }
+}

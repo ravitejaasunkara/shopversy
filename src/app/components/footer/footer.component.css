@@ -1,0 +1,32 @@
+#footer{
+    margin: 0;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+#icon{
+    padding-left: 7px;
+    padding-right: 8px;
+}
+.subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscription > h2,.subscription > h6,h2,h5,h3,h4{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+#footer{
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    bottom: 0;
+}
+input::placeholder {
+    color:#eeedec; /* Set the desired color for the placeholder text */
+}
+input:focus{
+    color:white;
+}
+
